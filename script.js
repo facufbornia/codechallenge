@@ -15,7 +15,8 @@ document.getElementById("user-form").addEventListener("submit",function(e) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(usuario)})
+        body: JSON.stringify({usuario})
+    })
 
         .then(resp => resp.json())
         .then(userForm => {
